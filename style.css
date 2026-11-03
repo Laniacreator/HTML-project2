@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #f4efe6;
+    color: #211d1a;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background:
+        linear-gradient(rgba(20, 18, 15, 0.60),
+                        rgba(20, 18, 15, 0.65)),
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+/* Header content */
+
+.header-content {
+    max-width: 900px;
+}
+
+header h1 {
+    font-size: 43px;
+    color: #e1c69a;
+    letter-spacing: 5px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+header p {
+    color: #f4efe6;
+    font-size: 17px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.header-decoration {
+    font-size: 12px;
+    color: #d5bd96;
+    letter-spacing: 3px;
+    margin-top: 25px;
+}
+
+/* Navigation */
+nav {
+    background-color: #f4efe6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 20px;
+    border-bottom: 1px solid #d8c9b5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #211d1a;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ad8d5e;
+}
+
+
+
+/* Main content */
+main {
+    max-width: 1150px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+section h2 {
+    text-align: center;
+    color: #211d1a;
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+section p {
+    text-align: center;
+    line-height: 2;
+    font-size: 16px;
+    color: #75665a;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Table of menu */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fffdf9;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+}
+
+thead {
+    background-color: #211d1a;
+    color: #d5bd96;
+}
+
+th, td {
+    padding: 20px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e8dfd2;
+}
+
+thead th {
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.category {
+    background-color: #e9dfd0;
+    color: #75604a;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    padding: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+tbody tr:not(:first-child) {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:not(:first-child):hover {
+    background-color: #f4efe6;
+}
+
+/* Images */
+td img {
+    width: 130px;
+    height: 95px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.07);
+}
+
+/* Names */
+td:nth-child(2) {
+    color: #302820;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Prices */
+.price {
+    color: #a18761;
+    font-weight: bold;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+/* FOOTER */
+.footer {
+    background: #171717;
+    color: #ffffff;
+    padding: 60px 20px 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Restaurant name */
+.footer h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #d4a373;
+    margin-bottom: 15px;
+}
+
+/* Description */
+.footer-description {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+/* Contact information */
+.footer-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 45px;
+}
+
+.footer-details p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.7;
+    transition: color 0.3s ease;
+}
+
+.footer-details p:hover {
+    color: #d4a373;
+}
+
+.footer-details strong {
+    display: block;
+    color: #d4a373;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Copyright */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding-top: 25px;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #888888;
+    font-size: 12px;
+    margin: 8px 0;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive */
+
+@media (max-width: 650px) {
+    header {
+        min-height: 350px;
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+        letter-spacing: 2px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    .italian-flag {
+        font-size: 35px;
+    }
+}
+
+    nav {
+        padding: 15px 5px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    main {
+        padding: 8px;
+        margin: 25px auto;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 9px 5px;
+    }
+
+    thead th {
+        font-size: 9px;
+        letter-spacing: 0;
+    }
+
+    .category {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    td img {
+        width: 75px;
+        height: 65px;
+    }
+
+    td:nth-child(2) {
+        font-size: 11px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 30px 10px;
+    }
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 45px 15px 20px;
+    }
+
+    .footer h2 {
+        font-size: 23px;
+        letter-spacing: 2px;
+    }
+
+    .footer-details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-details p {
+        margin: 5px 0;
+    }
+}
